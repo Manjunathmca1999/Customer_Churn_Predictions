@@ -3,9 +3,8 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 import pandas as pd
-from sklearn.preprocessing import *
-from sklearn.compose import ColumnTransformer
-from sklearn.metrics import accuracy_score
+# from sklearn.preprocessing import *
+# from sklearn.compose import ColumnTransformer
 
 import time
 bar = st.progress(2)
