@@ -5,4 +5,3 @@ matplotlib
 plotly
 seaborn
 streamlit
-Python 3.10.6
