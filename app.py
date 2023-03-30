@@ -95,9 +95,9 @@ def main():
 		
 
 	if add_selectbox == 'Batch':
-		file_upload = st.file_uploader("Upload csv file for predictions", type=["xlsx"])
+		file_upload = st.file_uploader("Upload csv file for predictions", type=["csv"])
 		if file_upload is not None:
-			df= pd.read_excel(file_upload)
+			df= pd.read_csv(file_upload)
 			df.columns = df.columns.str.lower().str.replace(' ', '_')
 			string_columns = list(df.dtypes[df.dtypes == 'object'].index)
 			for col in string_columns:
