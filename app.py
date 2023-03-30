@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 import pandas as pd
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.preprocessing import *
 from sklearn.compose import ColumnTransformer
 from sklearn.metrics import accuracy_score
 
@@ -131,4 +131,4 @@ def main():
 			
 
 if __name__ == '__main__':
-	main()
+	main(debug=True)
